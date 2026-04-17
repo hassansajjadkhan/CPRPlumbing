@@ -45,9 +45,6 @@ const ServicePage = () => {
     ? servicesData.find((s) => s.slug === service.parent)
     : null;
   const childServices = servicesData.filter((s) => s.parent === service.slug);
-  const siblingServices = parentService
-    ? servicesData.filter((s) => s.parent === parentService.slug)
-    : [];
 
   // Build category label
   const categoryLabel = parentService ? parentService.title : service.title;

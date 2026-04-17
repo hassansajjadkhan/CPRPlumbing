@@ -56,7 +56,8 @@ const QuoteForm = () => {
     setError('');
 
     try {
-      const res = await fetch('http://localhost:5000/api/quote', {
+      const apiUrl = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+      const res = await fetch(`${apiUrl}/api/quote`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
