@@ -1,0 +1,298 @@
+/* === Services Section === */
+.services {
+  padding: 6rem 2rem;
+  background: #020617;
+}
+
+.services-container {
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+/* Header */
+.services-header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.section-badge {
+  display: inline-block;
+  background: rgba(14, 165, 233, 0.12);
+  border: 1px solid rgba(14, 165, 233, 0.25);
+  color: #38bdf8;
+  padding: 0.45rem 1.2rem;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1.2rem;
+}
+
+.services-header h2 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.15;
+  margin-bottom: 1rem;
+}
+
+.services-header .highlight {
+  color: #0ea5e9;
+}
+
+.services-header p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.05rem;
+  max-width: 550px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+/* Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+/* Card */
+.service-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 18px;
+  overflow: hidden;
+  display: flex;
+  min-height: 260px;
+  transition: border-color 0.3s, transform 0.3s;
+  cursor: default;
+}
+
+.service-card:hover {
+  border-color: rgba(14, 165, 233, 0.3);
+  transform: translateY(-4px);
+}
+
+.card-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  padding: 1.8rem;
+  flex: 1;
+  min-width: 0;
+}
+
+/* Icon */
+.service-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 14px;
+  background: rgba(14, 165, 233, 0.12);
+  border: 1px solid rgba(14, 165, 233, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  color: #38bdf8;
+  margin-bottom: 1rem;
+  flex-shrink: 0;
+}
+
+/* Tag */
+.service-tag {
+  color: #0ea5e9;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 0.4rem;
+}
+
+.service-card h3 {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.service-card p {
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 0.88rem;
+  line-height: 1.6;
+  flex: 1;
+}
+
+/* Learn More */
+.service-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #0ea5e9;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: 0.8rem;
+  transition: gap 0.3s, color 0.3s;
+}
+
+.service-link:hover {
+  gap: 0.7rem;
+  color: #38bdf8;
+}
+
+.service-link svg {
+  font-size: 0.7rem;
+}
+
+/* Card Background Image */
+.card-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 55%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.35;
+  transition: opacity 0.4s;
+}
+
+.card-image::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    #020617 0%,
+    rgba(2, 6, 23, 0.7) 40%,
+    transparent 100%
+  );
+}
+
+.service-card:hover .card-image {
+  opacity: 0.5;
+}
+
+/* === Trust Bar === */
+.services-trust-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 18px;
+  padding: 1.5rem 2.2rem;
+}
+
+.trust-bar-main {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.trust-bar-shield {
+  font-size: 2.2rem;
+  color: #0ea5e9;
+  flex-shrink: 0;
+}
+
+.trust-bar-label {
+  display: block;
+  color: #0ea5e9;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 0.1rem;
+}
+
+.trust-bar-main strong {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+.trust-bar-items {
+  display: flex;
+  gap: 2rem;
+}
+
+.trust-bar-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.trust-bar-item > svg {
+  color: #0ea5e9;
+  font-size: 1rem;
+  flex-shrink: 0;
+}
+
+.trust-bar-item strong {
+  display: block;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.trust-bar-item span {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 0.75rem;
+}
+
+/* === Responsive === */
+@media (max-width: 1000px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .services-trust-bar {
+    flex-direction: column;
+    gap: 1.2rem;
+    text-align: center;
+  }
+
+  .trust-bar-main {
+    justify-content: center;
+  }
+
+  .trust-bar-items {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .services {
+    padding: 3.5rem 1rem;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .service-card {
+    min-height: 200px;
+  }
+
+  .card-content {
+    padding: 1.3rem;
+  }
+
+  .services-trust-bar {
+    padding: 1.2rem 1rem;
+  }
+
+  .trust-bar-items {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+}
